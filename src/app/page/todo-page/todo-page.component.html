@@ -1,0 +1,7 @@
+<p>todo-page works!</p>
+<div *ngFor="let todo of todoList">
+    <app-todo-item
+        [todoItem]="todo"
+        (deleteAction)="onDeleteClick($event)"></app-todo-item>
+</div>
+<button (click)="navigate()">navigate</button>
